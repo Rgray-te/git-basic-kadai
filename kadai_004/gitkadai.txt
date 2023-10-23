@@ -1,0 +1,39 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+PS C:\Users\akira> # 任意のディレクトリに移動する
+PS C:\Users\akira> cd git_kadai1
+PS C:\Users\akira\git_kadai1> # カレントディレクトリにgit_challengeディレクトリを作成する
+PS C:\Users\akira\git_kadai1> mkdir git_challenge
+
+
+    ディレクトリ: C:\Users\akira\git_kadai1
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----       2023/10/23     22:34                git_challenge
+
+
+PS C:\Users\akira\git_kadai1> # 作成したディレクトリに移動する
+PS C:\Users\akira\git_kadai1> cd git_challenge
+PS C:\Users\akira\git_kadai1\git_challenge> # カレントディレクトリにローカルリポジトリを作成する
+PS C:\Users\akira\git_kadai1\git_challenge> git init
+Initialized empty Git repository in C:/Users/akira/git_kadai1/git_challenge/.git/
+PS C:\Users\akira\git_kadai1\git_challenge> # １つのファイルをインデックスに登録する
+PS C:\Users\akira\git_kadai1\git_challenge> git add hello_world.txt
+PS C:\Users\akira\git_kadai1\git_challenge> git commit -m"hello_world.txtを追加"
+[main (root-commit) 176fa80] hello_world.txtを追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+PS C:\Users\akira\git_kadai1\git_challenge> #1
+PS C:\Users\akira\git_kadai1\git_challenge> # １つのファイルをインデックスに登録する
+PS C:\Users\akira\git_kadai1\git_challenge> git add hello_world.txt
+PS C:\Users\akira\git_kadai1\git_challenge> git commit -m"日本語訳を追記"
+[main 06b4afb] 日本語訳を追記
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+PS C:\Users\akira\git_kadai1\git_challenge> # コミットログを１行で表示する
+PS C:\Users\akira\git_kadai1\git_challenge> git log --oneline
+06b4afb (HEAD -> main) 日本語訳を追記
+176fa80 hello_world.txtを追加
+PS C:\Users\akira\git_kadai1\git_challenge>
